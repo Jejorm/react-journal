@@ -22,7 +22,7 @@ export const NoteView = () => {
 
         const newDate = new Date( date )
 
-        return newDate.toUTCString()
+        return newDate.toLocaleString( 'en-US', { hour12: false } )
     }, [ date ] )
 
     useEffect( () => {
